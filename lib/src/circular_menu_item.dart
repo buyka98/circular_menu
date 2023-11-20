@@ -57,8 +57,9 @@ class CircularMenuItem extends StatelessWidget {
     child: InkWell(
       onTap: (){
         onTap();
-      }
-      child: Container(
+      },
+      child: Ink(
+        child: Container(
       margin: EdgeInsets.all(margin),
       decoration: BoxDecoration(
         color: Colors.transparent,
@@ -90,6 +91,8 @@ class CircularMenuItem extends StatelessWidget {
         ),
       ),
     )
+      )
+      
     )
     );
   }
