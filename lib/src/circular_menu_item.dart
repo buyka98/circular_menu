@@ -53,7 +53,11 @@ class CircularMenuItem extends StatelessWidget {
         assert(margin >= 0.0);
 
   Widget _buildCircularMenuItem(BuildContext context) {
-    return Container(
+    return InkWell(
+      onTap: (){
+        onTap();
+      }
+      child: Container(
       margin: EdgeInsets.all(margin),
       decoration: BoxDecoration(
         color: Colors.transparent,
@@ -84,6 +88,7 @@ class CircularMenuItem extends StatelessWidget {
           ),
         ),
       ),
+    )
     );
   }
 
